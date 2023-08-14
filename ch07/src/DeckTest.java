@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 class DeckTest {
 	public static void main(String args[]) {
 		Deck d = new Deck();	// 카드 한 벌(Deck)을 만든다.
@@ -9,6 +11,7 @@ class DeckTest {
 		System.out.println(c);
 	}
 }
+	
 
 // Deck클래스
 class Deck {
@@ -21,6 +24,7 @@ class Deck {
 		for(int k=Card.KIND_MAX; k > 0; k--) // 4
 			for(int n=0; n < Card.NUM_MAX ; n++) // 13
 				cardArr[i++] = new Card(k, n+1);
+//		System.out.println(Arrays.toString(cardArr));
 	}
 
 	Card pick(int index) {	// 지정된 위치(index)에 있는 카드 하나를 꺼내서 반환
