@@ -7,6 +7,7 @@ class ReferenceParamEx3 {
 		sortArr(arr);   // 배열을 정렬
 		printArr(arr);  // 정렬후 결과를 출력
 		System.out.println("sum="+sumArr(arr)); // 배열의 총합을 출력
+		System.out.println(sumArr2(arr));
 	}
 
 	static void printArr(int[] arr) {  // 배열의 모든 요소를 출력
@@ -22,6 +23,15 @@ class ReferenceParamEx3 {
 
 		for(int i=0;i<arr.length;i++)
 			sum += arr[i];
+		return sum;
+	}
+	
+	static int sumArr2(int[] arr) {  // 배열의 모든 요소의 합을 반환
+		int sum = 0;
+
+		for(int i : arr) {
+			sum += i;
+		}
 		return sum;
 	}
 

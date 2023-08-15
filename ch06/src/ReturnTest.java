@@ -8,7 +8,8 @@ class ReturnTest {
 		int[] result2 = {0,1}; // 배열을 생성하고 result2[0]의 값을 0으로 초기화
 		r.add(3,5,result2);  // 배열을 add메서드의 매개변수로 전달
 		System.out.print("" + result2[0] + "," + result2[1]);
-	}
+	
+	}//main
 
 	int add(int a, int b) {
 		return a + b;
