@@ -1,3 +1,4 @@
+package ch06;
 class ReturnTest {
 	public static void main(String[] args) {
 		ReturnTest r = new ReturnTest();
