@@ -6,9 +6,9 @@ class CastingTest1 {
 
 		fe.water();
 		car = fe;    // car =(Car)fe;에서 형변환이 생략된 형태다.
-//		car.water();	
+//		car.water(); // 안됨. 조상의 리모컨에는 없음.
 		fe2 = (FireEngine)car; // 자손타입 ← 조상타입
-		fe2.water();
+		fe2.water(); // 조상의 참조변수를 다시 형변환 해서 사용 가능
 	}
 }
 

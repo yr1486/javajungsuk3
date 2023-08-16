@@ -3,11 +3,11 @@ class BindingTest3{
 		Parent5 p = new Child5();
 		Child5  c = new Child5();
 
-		System.out.println("p.x = " + p.x);
-		p.method();
+		System.out.println("p.x = " + p.x); // 100
+		p.method(); // 자식의 메소드
 		System.out.println();
-		System.out.println("c.x = " + c.x);
-		c.method();
+		System.out.println("c.x = " + c.x); // 200
+		c.method(); // 자식의 메소드
 	}
 }
 
