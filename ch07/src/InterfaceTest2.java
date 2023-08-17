@@ -25,5 +25,7 @@ class InterfaceTest2 {
 		A2 a = new A2();
 		a.autoPlay(new B2()); // void autoPlay(I i)호출
 		a.autoPlay(new C2()); // void autoPlay(I i)호출
+		
+		
 	}
 }
