@@ -51,12 +51,11 @@ class Point {
 	
 		@Override
 	public boolean equals(Object obj) {
-		if(!(obj instanceof Point)) {
+		if(!(obj instanceof Point)) { //true 로 조건문에 걸리게 설정
 			return false;
 		}
-		Point resultObj = (Point)obj;
-		
-		return this.x == resultObj.x && this.y == resultObj.y;
+			Point resultObj = (Point)obj;
+			return (this.x == resultObj.x) && (this.y == resultObj.y);
 	}
 	
 	

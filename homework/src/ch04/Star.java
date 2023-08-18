@@ -236,7 +236,7 @@ public class Star {
 	}
 	
 	public static void main(String[] args) {
-		ex0();
+		ex2();
 	}
 
 }
